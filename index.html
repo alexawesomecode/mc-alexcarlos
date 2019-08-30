@@ -15,13 +15,13 @@
     <form id="survey-form">
 
       <label for="name" id="name-label"> Username </label>
-	<input type="text" name="username" id="name" placeholder="e.g. Carlos Augusto"> 
+	<input type="text" name="username" id="name" placeholder="e.g. Carlos Augusto" required> 
 	
       <label for="email" id="email-label"> Email </label>
  
-        <input type="email" name="email" id="email" placeholder="email@host.com">
+        <input type="email" name="email" id="email" placeholder="email@host.com" required>
 	<label for="number" id="number-label"> Number </label>
-      <input type="number" name="number" id="number" min="0" max="100" placeholder="55555555">
+      <input type="number" name="number" id="number" min="0" max="100" placeholder="55555555" required>
 
       <select id="dropdown">
           <option value="student">Student</option>
@@ -30,15 +30,15 @@
           <option value="other">Other</option>
       </select>
       <div>
-      <input id="1k" type="radio" name="salary">
+      <input id="1k" type="radio" name="salary" value="1k">
       <label for="1k"> 1K </label>
 
       
-      <input id="10k" type="radio" name="salary">
+      <input id="10k" type="radio" name="salary" value="10k">
       <label for="10k"> 10K </label>
 
       
-      <input id="100k" type="radio" name="salary">
+      <input id="100k" type="radio" name="salary" value="100k">
       <label for="100k"> 100K </label>
 
       </div>
@@ -50,7 +50,13 @@
       <label> Architect </label>
 
             
-	</div>
+  </div>
+  
+  <textarea id="story" name="story"
+          rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>
+  <input type="submit" value="Submit" id="submit">
     </form>
 
 
